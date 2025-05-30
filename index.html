@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Join Button</title>
+    <title></title>
     <style>
         body {
             background-color: #ffffff;
             margin: 0;
             padding: 0;
         }
-        
+
         .container {
             width: 100%;
-            max-width: 100%; 
-            display: flex; /* Added this to make justify-content work */
+            max-width: 100%;
+            display: flex;
             justify-content: center;
         }
-        
+
         .image-section {
             width: 100%;
             text-align: center;
         }
-        
+
         .whatsapp-button {
-            display: inline-block; /* Ensures proper sizing of the button */
-            width: 100%; /* Or a fixed width if you prefer */
-            max-width: 100%; /* Ensures it doesn't overflow its container */
-        }
-        
-        .whatsapp-button img {
-            width: 100%; /* Makes width responsive */
-            height: auto; /* Makes height adjust proportionally */
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            width: 100%;
             max-width: 100%;
-            display: block; /* Removes extra space below image */
         }
-        
+
+        .whatsapp-button img {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            outline: none;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+
         .whatsapp-button:hover {
             opacity: 0.9;
         }
@@ -43,6 +50,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="image-section">
@@ -52,4 +60,5 @@
         </div>
     </div>
 </body>
+
 </html>
