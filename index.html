@@ -6,16 +6,16 @@
     <title>WhatsApp Join Button</title>
     <style>
         body {
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
         }
         
         .container {
             width: 100%;
-            max-width: 960px; 
-            box-sizing: border-box;
+            max-width: 100%; 
+            display: flex; /* Added this to make justify-content work */
+            justify-content: center;
         }
         
         .image-section {
@@ -24,18 +24,23 @@
         }
         
         .whatsapp-button {
-            display: block;
-            width: 100%;
+            display: inline-block; /* Ensures proper sizing of the button */
+            width: 100%; /* Or a fixed width if you prefer */
+            max-width: 100%; /* Ensures it doesn't overflow its container */
         }
         
         .whatsapp-button img {
-            width: 100%;
-            height: auto; 
-            max-width: 100%; 
-            display: block;
+            width: 100%; /* Makes width responsive */
+            height: auto; /* Makes height adjust proportionally */
+            max-width: 100%;
+            display: block; /* Removes extra space below image */
         }
         
+        .whatsapp-button:hover {
+            opacity: 0.9;
+        }
     </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
